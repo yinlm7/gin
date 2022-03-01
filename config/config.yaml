@@ -1,0 +1,24 @@
+app: # 应用基本配置
+  env: local # 环境名称
+  port: 8080 # 服务监听端口号
+  app_name: gin-app # 应用名称
+  app_url: http://localhost # 应用域名
+
+redis:
+  addr: 192.168.0.134:6379
+  password: ItCV5AVi7qsbC4MX
+  defaultDB: 1
+  maxIdle: 20 # 连接池最大空闲数
+  maxActive: 500 #连接池最大连接数
+  idleTimeout: 60 # 空闲施放时间 秒
+  wait: true # 超出最大连接数是否等待
+
+mongodb:
+  addr: 47.105.72.14
+  port: 27017
+  user: ginadmin
+  password: gadmin
+  defaultDB : admin
+#  mgoUrl: mongodb://ginadmin:gadmin@47.105.72.14:27017/admin
+  mgoUrl: mongodb://root:J520569%40cykj_123%21569@dds-m5e6cbdd2f323e041499-pub.mongodb.rds.aliyuncs.com:3717,dds-m5e6cbdd2f323e042836-pub.mongodb.rds.aliyuncs.com:3717/?replicaSet=mgset-47525656&authSource=admin
+  clientNum : 20
