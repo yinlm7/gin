@@ -14,11 +14,10 @@ redis:
   wait: true # 超出最大连接数是否等待
 
 mongodb:
-  addr: 47.105.72.14
+  addr: 127.0.0.1
   port: 27017
   user: ginadmin
   password: gadmin
   defaultDB : admin
-#  mgoUrl: mongodb://ginadmin:gadmin@47.105.72.14:27017/admin
-  mgoUrl: mongodb://root:J520569%40cykj_123%21569@dds-m5e6cbdd2f323e041499-pub.mongodb.rds.aliyuncs.com:3717,dds-m5e6cbdd2f323e042836-pub.mongodb.rds.aliyuncs.com:3717/?replicaSet=mgset-47525656&authSource=admin
+  mgoUrl: mongodb://ginadmin:gadmin@127.0.0.1:27017/admin
   clientNum : 20
